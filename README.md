@@ -1,16 +1,16 @@
 # Digibyte docker image
 
-[![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-digibyte/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-digibyte)
+This is unofficial Digibyte docker image.
+
+It is being used internally at Coin Metrics, and is published in the hope it will be useful, but without any warranty. No support is available. You are using it at your own risk.
 
 ## Using image
+
+[![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-digibyte/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-digibyte)
 
 ```
 docker pull quay.io/coinmetrics/fullnode-digibyte:<version>
 ```
-
-## Support
-
-This image is being used internally at Coin Metrics. No support is available. You are using it at your own risk.
 
 ## Security
 
