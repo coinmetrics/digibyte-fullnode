@@ -2,9 +2,12 @@
 
 set -e
 
+export DOCKER_REGISTRY_REPO="${DOCKER_REGISTRY_REPO:-"$(basename "$PWD")"}"
+
 export VERSION=$(cat version.txt)
 export VERSION_SHORT=$(cat version_short.txt)
-echo "Image version ${VERSION} (short ${VERSION_SHORT})."
+echo "Building $DOCKER_REGISTRY_REPO version ${VERSION}."
+#echo "Image version ${VERSION} (short ${VERSION_SHORT})."
 
 echo "Building image..."
 docker build --build-arg "VERSION=${VERSION}" --build-arg "VERSION_SHORT=${VERSION_SHORT}" -t "${DOCKER_REGISTRY_REPO}:${VERSION}" .
