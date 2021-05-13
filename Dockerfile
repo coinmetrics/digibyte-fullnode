@@ -31,7 +31,7 @@ ARG VERSION
 
 # source
 RUN set -ex; \
-  git clone -b ${VERSION} --depth 1 --recursive https://github.com/digibyte/digibyte.git /home/builder/digibyte
+  git clone -b ${VERSION} --depth 1 --recursive https://github.com/DigiByte-Core/digibyte.git /home/builder/digibyte
 
 # build
 RUN set -ex; \
